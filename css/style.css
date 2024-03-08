@@ -3,4 +3,27 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color: aliceblue;
+
+    
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.form{
+    width: 400px;
+    background-color:black;
+    margin:auto;
+    padding: 0 auto;
+}
+.button{
+    color: aliceblue;
+    background-color: black;
+}
+div{
+    row-gap: 2rem;
+}
+input{
+    width:auto;
 }
