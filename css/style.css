@@ -7,6 +7,10 @@ body{
 
     
 }
+.img{
+    width: 150px;
+    height: 60px;
+}
 a{
     text-decoration: none;
     color: aliceblue;
@@ -14,8 +18,8 @@ a{
 .form{
     width: 400px;
     background-color:black;
-    margin:auto;
-    padding: 0 auto;
+    padding: 40px;
+    margin: auto;
 }
 .button{
     color: aliceblue;
