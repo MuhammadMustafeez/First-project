@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="./css/style.css"> 
-
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <table width="100%" cellspacing="0">
-        <tr>
-            <td>
-                <table  width="100%">
-                    <tr>
-                        <td align="center"><a href="./index.html"><img src="./Images/logo.png" alt="logo" class="img"></a></td>
-                        <td width="20%"></td>
-                        <td><a href="./index.html">Home</a></td>
-                        <td><a href="./Project/projects.html">Projects</a></td>
-                        <td><a href="./Skill/skill.html">Skills</a></td>
-                        <td><a href="./About/aboutus.html">About US</a></td>
-                    </tr>
-                </table>
-            </td>
+    <header>
+        <table  width="100%">
+         <tr>
+             <td align="center"><a href="./index.html"><img src="./Images/logo.png" alt="logo" class="img"></a></td>
+             <td width="20%"></td>
+             <td><a href="./index.html">Home</a></td>
+             <td><a href="./Project/projects.html">Projects</a></td>
+             <td><a href="./Skill/skill.html">Skills</a></td>
+             <td><a href="./About/aboutus.html">About US</a></td>
         </tr>
-    </table>
-    <br><br><br>
+        </table>
+    </header>
+    <main>
     <table>
     <tr>
     <td rowspan="2" style="padding: 0px;margin: 0px;"><img src="./Images/Muhammad.jpg" alt="Muhammad's Image" width="150px" height="150px" align="left" ></td>
-    <td><h2 style="margin: 0px;">BIOGRAPHY:</h2>
-    <p style="margin: 0px;">AOA & Hello my name is Muhammad Mustafeez, I am a web developer and IT student and currently doing bachelor in IT in 8 <sup>th</sup> semester.
+    <td><h2 style="margin: 0px;">BIOGRAPHY:</h2><div class="volume-icon" onclick="playAudio()"></div>
+        <audio id="myAudio">
+          <source src="./audio/Audio.ogg" type="audio/mpeg"> <!-- Replace 'your-audio-file.mp3' with your actual audio file -->
+          Your browser does not support the audio element.
+        </audio>
+        
+        <script>
+        function playAudio() {
+          var audio = document.getElementById("myAudio");
+          audio.play();
+        }
+        </script>
+    <p>AOA & Hello my name is Muhammad Mustafeez, I am a web developer and IT student and currently doing bachelor in IT in 8 <sup>th</sup> semester.
     <br>I am actually learning to work in Mobile and Web Development.</p></td>
     </tr>
 </table>
@@ -51,6 +57,9 @@
             <td>2020</td>
         </tr>
     </table>
-
+</main>
+    <footer>
+       <div>Copyright &copy; Designed by <span>Muhammad Mustafeez</span></div>
+    </footer>
     </body>
 </html>
